@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velocity Rent</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Velocity Rent - Sewa mobil mudah dan cepat dengan armada terbaik di Indonesia." />
+  <!-- Font Awesome untuk icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <img src="images/mobil daihatsu xenia.jpg" alt="Hero Banner" class="hero-image" />
+    <h1>Sewa Mobil Mudah & Cepat</h1>
+    <p>Bersama <strong>Velocity Rent</strong></p>
+    <button onclick="window.location='#formulir'">Pesan Sekarang</button>
+  </header>
+
+  <section class="about" id="about">
+    <h2><i class="fas fa-car"></i> Tentang Velocity Rent</h2>
+    <p>Velocity Rent adalah perusahaan rental mobil yang menyediakan layanan sewa kendaraan dengan proses yang mudah, cepat, dan aman.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2><i class="fas fa-concierge-bell"></i> Layanan Kami</h2>
+    <div class="service-options">
+      <div class="service-item">
+        <img src="images/icon_harian.png" alt="Sewa Harian" class="service-image" />
+        <div class="service-content">
+          <h3><i class="fas fa-calendar-day"></i> Sewa Harian</h3>
+          <p>Nikmati fleksibilitas menyewa mobil per hari, dengan harga terjangkau dan proses cepat.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="images/icon_bulanan.png" alt="Sewa Bulanan" class="service-image" />
+        <div class="service-content">
+          <h3><i class="fas fa-calendar-alt"></i> Sewa Bulanan</h3>
+          <p>Solusi sewa mobil jangka panjang untuk kebutuhan bulanan dengan harga kompetitif.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="images/icon_sopir.png" alt="Sewa + Sopir" class="service-image" />
+        <div class="service-content">
+          <h3><i class="fas fa-user-tie"></i> Sewa + Sopir</h3>
+          <p>Tambahkan sopir berpengalaman untuk perjalanan Anda agar lebih nyaman dan aman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="armada" id="armada">
+    <h2><i class="fas fa-car-side"></i> Armada Kami</h2>
+    <div class="cars">
+      <div class="car-card">
+        <a href="https://velocityrent.id/armada/avanza" target="_blank">
+          <img src="images/mobil toyota avanza .jpg" alt="Toyota Avanza" width="300" />
+        </a>
+        <h3>Toyota Avanza</h3>
+        <p>Rp400.000 / hari</p>
+        <p>Manual, Kapasitas 7 orang</p>
+      </div>
+
+      <div class="car-card">
+        <a href="https://velocityrent.id/armada/mobilio" target="_blank">
+          <img src="images/mobil honda mobilio.jpg" alt="Honda Mobilio" width="300" />
+        </a>
+        <h3>Honda Mobilio</h3>
+        <p>Rp450.000 / hari</p>
+        <p>Matic, Kapasitas 7 orang</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimoni-formulir" id="testimoni-formulir">
+    <div class="testimoni">
+      <h2><i class="fas fa-comment-dots"></i> Testimoni</h2>
+      <blockquote>"Mobilnya bersih dan pelayanan sangat ramah."<br /><strong>Andi Prasetyo</strong></blockquote>
+      <blockquote>"Sangat puas! Mobil nyaman dan sesuai ekspektasi."<br /><strong>Sri Wahyuni</strong></blockquote>
+      <blockquote>"Proses pemesanan mudah dan cepat. Layanan terbaik!"<br /><strong>Rudianto</strong></blockquote>
+      <blockquote>"Harga terjangkau dan mobilnya dalam kondisi prima."<br /><strong>Febriana</strong></blockquote>
+      <blockquote>"Pengalaman sewa yang sangat memuaskan. Terima kasih Velocity Rent!"<br /><strong>Rizal</strong></blockquote>
+    </div>
+
+    <div class="formulir" id="formulir">
+      <h2><i class="fas fa-clipboard-list"></i> Formulir Pemesanan</h2>
+      <form action="proses_pemesanan.php" method="POST">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama" required />
+
+        <label for="tanggal">Tanggal Sewa</label>
+        <input type="date" id="tanggal" name="tanggal" required />
+
+        <label for="jenis">Jenis Mobil</label>
+        <select id="jenis" name="jenis" required>
+          <option value="">-- Pilih Mobil --</option>
+          <option value="Toyota Avanza">Toyota Avanza</option>
+          <option value="Honda Mobilio">Honda Mobilio</option>
+        </select>
+
+        <label for="hp">No. HP</label>
+        <input type="tel" id="hp" name="hp" placeholder="No. HP" required />
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Kirim Pesanan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <h2><i class="fas fa-phone-alt"></i> Kontak Kami</h2>
+    <p><i class="fab fa-whatsapp"></i> Telp/WA: 0815-8587-4677</p>
+    <p><i class="fas fa-envelope"></i> Email: info@velocityrent.id</p>
+  </footer>
+
+</body>
+</html>
